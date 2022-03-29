@@ -19,7 +19,7 @@
 #
 #SBATCH --gres=gpu:GTX2080TI:4
 #
-#SBATCH --time=00:01:00
+#SBATCH --time=00:15:00
 #
 
 

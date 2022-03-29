@@ -35,7 +35,7 @@ export CUDA_PATH=/global/software/sl-7.x86_64/modules/langs/cuda/11.2
 export LD_LIBRARY_PATH=$CUDA_PATH/lib64:$LD_LIBRARY_PATH
 
 
-XLA_FLAGS=--xla_gpu_cuda_data_dir=/global/software/sl-7.x86_64/modules/langs/cuda/11.2 python ~/run.py
+XLA_FLAGS=--xla_gpu_cuda_data_dir=/global/software/sl-7.x86_64/modules/langs/cuda/11.2 python ~/cancellations/run.py
 
 #module load gnu-parallel/2019.03.22 
 #parallel -j $SLURM_CPUS_ON_NODE XLA_FLAGS=--xla_gpu_cuda_data_dir=/global/software/sl-7.x86_64/modules/langs/cuda/11.2 python runtest.py 20000 30 ::: `seq 10`

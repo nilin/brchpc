@@ -13,9 +13,14 @@ def log(*x,printtime=True):
 
 log(jax.devices()[0])
 
-n=int(sys.argv[1])
-m=int(sys.argv[2])
-its=int(sys.argv[3])
+#n=int(sys.argv[1])
+#m=int(sys.argv[2])
+#its=int(sys.argv[3])
+
+n=10000
+m=30
+its=1000
+
 log(n)
 key=jax.random.PRNGKey(0)
 key0,*keys=jax.random.split(key,3*its)
